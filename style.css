@@ -83,17 +83,17 @@ a:-webkit-any-link {
 .navbarPages a {
     float: left;
     display: block; 
-    font-family: 'Bruno Ace';
+    font-family: 'Exo 2';
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 /* Navbar links on hover except the spacer */
 .navbarPages a:hover {
     color: rgba(255, 255, 255, 0.65);
-    font-size: 13.02px;
+    font-size: 16.02px;
     transition: 0.5s
 }
 
@@ -110,10 +110,10 @@ a:-webkit-any-link {
 
 /* when screen is smaller than 775px */
 @media screen and (max-width: 775px) {
-    .nav1, .nav2, .nav3 {padding: 1.5em 5vw;}  
+    .nav1, .nav2, .nav3 {padding: 1em 5vw;}  
 }
 
 /* when screen is bigger than 775px */
 @media screen and (min-width: 775px) {
-    .nav1, .nav2, .nav3 {padding: 3em 5vw;}
+    .nav1, .nav2, .nav3 {padding: 2em 5vw;}
 }
