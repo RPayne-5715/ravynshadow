@@ -1,0 +1,163 @@
+/* ------------------------------ General -----------------------------*/
+
+/* Global color variables */
+:root {
+    --colorwow: rgb(0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Removing white border */
+body {
+    margin: 0;
+    background-color: black;
+}
+
+/* Removing default link styling */
+a:-webkit-any-link {
+    color:inherit;
+    cursor: pointer;
+    text-decoration:inherit;
+}
+/* ------------------------------ Navbar -----------------------------*/
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    transition: .35s;
+    transition-timing-function: ease-out;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes nav1 {
+    from {transform: translateY(0)}
+    to {transform: translateY(0.4em)}
+}
+
+@keyframes nav2 {
+    from {transform: translateY(0)}
+    to {transform: translateY(0.3em)}
+}
+
+@keyframes nav3 {
+    from {transform: translateY(0)}
+    to {transform: translateY(0.4em)}
+}
+
+/* Navbar spacer because i counldt figure out how to fix an odd overlap issue but this did it so... */
+.navbarSpacer {
+    color: transparent!important;
+}
+
+
+/* Navbar links */
+.navbarPages a {
+    float: left;
+    display: block; 
+    font-family: 'Bruno Ace';
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Navbar links on hover except the spacer */
+.navbarPages a:hover:not(.navbarSpacer) {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13.02px;
+    transition: 0.5s
+}
+
+/* Navbar highlight active page */
+.navbarPages a.active {
+    font-weight: bolder;
+}
+
+
+/* Navbar hide links for small windows */
+.navbarPages .dropdownIcon {
+    display: none;
+}
+
+/* ------------------------------ Index -----------------------------*/
+
+/* ----------------------------- Pages -----------------------------*/
+
+
+/* --------------------- media queries: 775px --------------------------*/
+
+/* when screen is smaller than 775px */
+@media screen and (max-width: 775px) {
+    .navbarPages.responsive {
+        position: relative; 
+    }
+    .navbarPages.responsive a.dropdownIcon {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    .navbarPages.responsive a {
+        float: none;
+        display: block; 
+        text-align: right;
+    }
+    .navbarPages a {
+        display: none;
+        padding: 30px 16px;
+    }
+    .navbarPages a.dropdownIcon {
+        float: right;
+        display: block;
+}
+
+.navbar {background-image: linear-gradient(rgba(5, 20, 57, 1) 98%, transparent);}
+.homeIcon {padding: 15px 0 0 15px;}
+.homeLink {display: none;}
+/*FIXME #1 show:none instead of scale*/
+}
+
+/* when screen is bigger than 775px */
+@media screen and (min-width: 775px) {
+.navbar {background-image: linear-gradient(black 10%, transparent);}
+.nav1, .nav2, .nav3 {
+    padding: 1.5em 5vw;
+}
+.nav1 {
+    animation-name: nav1;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+.nav2 {
+    animation-name: nav2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: .4s;
+    animation-fill-mode: both;
+}
+.nav3 {
+    animation-name: nav3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: .9s;
+    animation-fill-mode: both;
+}
+.homeIcon {padding: 8px 0 0 10px;}
+.homeLink {scale: 1;}
+}
+
+/* --------------------- media queries: 900px --------------------------*/
+
+/* when screen is smaller than 900px */
+@media screen and (max-width: 900px) {
+
+}
