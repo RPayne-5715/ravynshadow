@@ -38,18 +38,36 @@ a:-webkit-any-link {
 
 
 @keyframes nav1 {
-    from {transform: translateY(0)}
-    to {transform: translateY(0.4em)}
+    from {
+        transform: translateY(0);
+        color: rgba(200, 200, 200, 0.4);
+    }
+    to {
+        transform: translateY(0.4em);
+        color: rgba(200, 200, 200, 0.5);
+    }
 }
 
 @keyframes nav2 {
-    from {transform: translateY(0)}
-    to {transform: translateY(0.3em)}
+    from {
+        transform: translateY(0);
+        color: rgba(200, 200, 200, 0.4);
+    }
+    to {
+        transform: translateY(0.3em);
+        color: rgba(200, 200, 200, 0.5);
+    }
 }
 
 @keyframes nav3 {
-    from {transform: translateY(0)}
-    to {transform: translateY(0.4em)}
+    from {
+        transform: translateY(0);
+        color: rgba(200, 200, 200, 0.4);
+    }
+    to {
+        transform: translateY(0.4em);
+        color: rgba(200, 200, 200, 0.5);
+    }
 }
 
 .nav1 {
@@ -90,9 +108,9 @@ a:-webkit-any-link {
     font-size: 16px;
 }
 
-/* Navbar links on hover except the spacer */
+/* Navbar links on hover */
 .navbarPages a:hover {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.638);
     font-size: 16.02px;
     transition: 0.5s
 }
