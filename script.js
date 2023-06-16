@@ -1,14 +1,3 @@
-function dropdown() {
-    var x = document.getElementById("NavbarPages");
-    if (x.className === "navbarPages") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbarPages";
-    }
-
-  }
-
-
 navbarShift = "-80px";
 
 var prevScrollpos = window.pageYOffset;

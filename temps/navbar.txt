@@ -1,12 +1,9 @@
 <div id="NavContainer" class="navbar">
     <span id="Navbar">
       <span id="NavbarPages" class="navbarPages">
-        <a class="navbarSpacer"> X </a>
         <a class="nav1" href="home.html">home</a>
         <a class="nav2" href="shop.html">shop</a>
         <a class="nav3" href="contact.html">contact</a>
-        <a href="javascript:void(0);" class="dropdownIcon" onclick="dropdown()">
-          <i class="fa fa-bars"></i></a>
 
       </span>
     </span>
