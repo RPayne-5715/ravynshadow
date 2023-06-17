@@ -122,6 +122,162 @@ a:-webkit-any-link {
 
 /* ------------------------------ Index -----------------------------*/
 
+/* Top section of Index */
+.banner {
+    background: url(images/banner.JPG);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    
+  }
+
+  @keyframes letter {
+    from {
+        transform: translateY(0em);
+        color: rgba(200, 200, 200, 0.6);
+    }
+    to {
+        transform: translateY(1em);
+        color: rgba(200, 200, 200, 0.9);
+    }
+}
+
+  /* "Meet Monty" */
+  .bannerText {
+    font-family: 'Palette Mosaic';
+    font-size: 6vw;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-shadow: 1px 7px 15px black;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+/*Individual letters*/
+.bannerText span {
+    margin: 0 -0.3em;
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.bannerText span:nth-child(11n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 1.0s;
+}
+
+.bannerText span:nth-child(5n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 1.5s; 
+}
+
+.bannerText span:nth-child(8n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 2.0s; 
+}
+
+.bannerText span:nth-child(10n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 2.5s; 
+}
+
+.bannerText span:nth-child(6n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 3.0s; 
+}
+
+.bannerText span:nth-child(3n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 3.5s; 
+}
+
+.bannerText span:nth-child(9n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 4.0s; 
+}
+
+.bannerText span:nth-child(2n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 4.5s; 
+}
+
+.bannerText span:nth-child(7n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 5.0s; 
+}
+
+.bannerText span:nth-child(4n) {
+    animation-name: letter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 5.5s; 
+}
+
+
+  
+  /* "Learn More" button on banner" */
+  .bannerButton {
+    transition: .3s;
+    color: rgba(255, 255, 255, 0.882);
+    font-size: 300%;
+    text-shadow: 0px 7px 15px black;
+  }
+  
+  .bannerButton:hover {
+    font-size: 400%;
+    text-shadow: 0px 18px 15px black;
+  }
+
 /* ----------------------------- Pages -----------------------------*/
 
 /* --------------------- media queries: 775px --------------------------*/
