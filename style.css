@@ -142,12 +142,19 @@ a:-webkit-any-link {
 
   @keyframes letter {
     from {
-        transform: translateY(0em);
         color: rgba(200, 200, 200, 0.6);
     }
     to {
-        transform: translateY(1em);
         color: rgba(200, 200, 200, 0.9);
+    }
+}
+
+  @keyframes hover {
+    from {
+        transform: translateY(-0.05em);
+    }
+    to {
+        transform: translateY(0.05em);
     }
 }
 
@@ -160,7 +167,13 @@ a:-webkit-any-link {
     text-shadow: 1px 7px 15px black;
     text-align: center;
     white-space: nowrap;
-  }
+    animation-name: hover;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
 
 /*Individual letters*/
 .bannerText span {
